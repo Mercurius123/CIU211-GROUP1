@@ -7,6 +7,7 @@ TagManager:
   - Player1
   - Player2
   - Ground
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Politician
+  - Internet Troll/Bully
   - 
   - 
   - 
