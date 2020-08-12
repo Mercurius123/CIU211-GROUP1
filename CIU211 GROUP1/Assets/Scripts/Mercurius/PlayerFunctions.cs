@@ -10,6 +10,7 @@ public class PlayerFunctions : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode jump;
+    public KeyCode throwBall;
 
     private Rigidbody2D theRB;
 
@@ -18,6 +19,9 @@ public class PlayerFunctions : MonoBehaviour
     public LayerMask whatIsGround;
 
     public bool isGrounded;
+
+    public GameObject wordThrowable;
+    public Transform throwPoint;
 
 
     void Start()
@@ -51,7 +55,10 @@ public class PlayerFunctions : MonoBehaviour
             theRB.velocity = new Vector2(theRB.velocity.x, jumpforce);
         }
 
-
+        if (Input.GetKeyDown(throwBall))
+        {
+             Instantiate(wordThrowable, throwPoint.position, throwPoint.rotation);
+        }
 
         
         
