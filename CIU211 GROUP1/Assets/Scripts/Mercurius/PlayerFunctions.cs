@@ -6,6 +6,7 @@ public class PlayerFunctions : MonoBehaviour
 {
     public float movespeed;
     public float jumpforce;
+    
 
     public KeyCode left;
     public KeyCode right;
@@ -22,6 +23,11 @@ public class PlayerFunctions : MonoBehaviour
 
     public GameObject wordThrowable;
     public Transform throwPoint;
+
+
+    
+
+
 
 
     void Start()
@@ -57,11 +63,24 @@ public class PlayerFunctions : MonoBehaviour
 
         if (Input.GetKeyDown(throwBall))
         {
-             Instantiate(wordThrowable, throwPoint.position, throwPoint.rotation);
+            GameObject ballClone = (GameObject)Instantiate(wordThrowable, throwPoint.position, throwPoint.rotation);
+            ballClone.transform.localScale = transform.localScale;
         }
 
-        
-        
-       
+        if (theRB.velocity.x < 0)
+        {
+            transform.localScale = new Vector3(-0.2f, 0.2f, 0.2f);
+        }
+        else if (theRB.velocity.x > 0)
+        {
+            transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+        }
+
+
     }
+
+
+    
+
+
 }

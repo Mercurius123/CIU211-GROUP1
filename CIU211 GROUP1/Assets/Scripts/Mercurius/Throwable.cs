@@ -28,6 +28,19 @@ public class Throwable : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.tag == "Player1")
+        {
+            FindObjectOfType<SystemManager>().HurtP1();
+          
+        }
+
+        if (other.tag == "Player2")
+        {
+            FindObjectOfType<SystemManager>().HurtP2();
+
+        }
+
+
         Instantiate(throwableEffect, transform.position, transform.rotation);
 
 
