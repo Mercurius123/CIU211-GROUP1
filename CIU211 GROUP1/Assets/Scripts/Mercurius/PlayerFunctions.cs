@@ -24,6 +24,8 @@ public class PlayerFunctions : MonoBehaviour
     public GameObject wordThrowable;
     public Transform throwPoint;
 
+    public AudioSource throwSound;
+
 
     
 
@@ -65,6 +67,8 @@ public class PlayerFunctions : MonoBehaviour
         {
             GameObject ballClone = (GameObject)Instantiate(wordThrowable, throwPoint.position, throwPoint.rotation);
             ballClone.transform.localScale = transform.localScale;
+
+            throwSound.Play();
         }
 
         if (theRB.velocity.x < 0)

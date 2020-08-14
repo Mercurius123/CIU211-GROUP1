@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SystemManager : MonoBehaviour
 {
@@ -16,7 +17,9 @@ public class SystemManager : MonoBehaviour
     public GameObject[] p1Sticks;
     public GameObject[] p2Sticks;
 
+    public AudioSource hurtSound;
 
+    public string mainMenu;
 
     void Start()
     {
@@ -35,6 +38,16 @@ public class SystemManager : MonoBehaviour
         {
             player2.SetActive(false);
             p1Wins.SetActive(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(mainMenu);
         }
 
 
@@ -56,6 +69,11 @@ public class SystemManager : MonoBehaviour
                 p1Sticks[i].SetActive(false);
             }
         }
+
+        hurtSound.Play();
+
+
+
     }
 
     public void HurtP2()
@@ -74,6 +92,11 @@ public class SystemManager : MonoBehaviour
                 p2Sticks[i].SetActive(false);
             }
         }
+
+        hurtSound.Play();
+
+
+
     }
 
 }
