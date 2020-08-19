@@ -18,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Background
   - Politician
   - Internet Troll/Bully
   - 
@@ -43,9 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 27829139
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
