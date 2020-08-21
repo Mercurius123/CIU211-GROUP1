@@ -66,7 +66,7 @@ public class PlayerFunctions : MonoBehaviour
         if (Input.GetKeyDown(throwBall))
         {
             GameObject ballClone = (GameObject)Instantiate(wordThrowable, throwPoint.position, throwPoint.rotation);
-            ballClone.transform.localScale = transform.localScale;
+            ballClone.transform.localScale = transform.localScale/0.5f;
 
             throwSound.Play();
         }

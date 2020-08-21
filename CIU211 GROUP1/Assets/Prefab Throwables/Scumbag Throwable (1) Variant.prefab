@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scumbag Throwable (1) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1621011155776685357, guid: c201087d93cd59143833579d737ee778,
+        type: 3}
+      propertyPath: ballSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1621011155776685359, guid: c201087d93cd59143833579d737ee778,
         type: 3}
       propertyPath: m_Offset.x
@@ -41,12 +46,12 @@ PrefabInstance:
     - target: {fileID: 1621011155776685361, guid: c201087d93cd59143833579d737ee778,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.26
+      value: 9.822
       objectReference: {fileID: 0}
     - target: {fileID: 1621011155776685361, guid: c201087d93cd59143833579d737ee778,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 10.037
       objectReference: {fileID: 0}
     - target: {fileID: 1621011155776685361, guid: c201087d93cd59143833579d737ee778,
         type: 3}
@@ -96,12 +101,12 @@ PrefabInstance:
     - target: {fileID: 1621011155776685361, guid: c201087d93cd59143833579d737ee778,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 9.07
+      value: 15.26481
       objectReference: {fileID: 0}
     - target: {fileID: 1621011155776685361, guid: c201087d93cd59143833579d737ee778,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 12.13
+      value: 27.34102
       objectReference: {fileID: 0}
     - target: {fileID: 1621011155776685361, guid: c201087d93cd59143833579d737ee778,
         type: 3}
